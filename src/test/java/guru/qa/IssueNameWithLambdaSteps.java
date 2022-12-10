@@ -42,7 +42,7 @@ public class IssueNameWithLambdaSteps {
         step("Filter issues by closed status", () -> {
             $("[data-ga-click='Issues, Table state, Closed']", 1).click();
         });
-        step("Check that issue's name is " + "" + issueName + "", () -> {
+        step("Check that issue's name is: " + "" + issueName + "", () -> {
             $("#issue_5_link").shouldHave(text(issueName));
         });
     }
