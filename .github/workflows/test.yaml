@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: 'zulu'
-          java-version: '17'
+          java-version: '11'
       - run: chmod +x ./gradlew
       - uses: Xotabu4/selenoid-github-action@v2
       - run: ./gradlew clean test -Dselenide.remote=http://localhost:4444/wd/hub
